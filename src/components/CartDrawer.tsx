@@ -89,13 +89,13 @@ export default function CartDrawer({
                       <p className="text-text-secondary text-xs font-mono uppercase tracking-widest">
                         Your Atelier Cart Is Free of Selections
                       </p>
-                      <p className="text-[11px] text-text-secondary/60 max-w-xs mx-auto mt-2 font-light">
+                      <p className="text-xs font-semibold text-text-secondary/60 max-w-xs mx-auto mt-2 font-light">
                         Explore our single-operation Goodyear welt lookbook to allocate a premium pair of cordwainer boots.
                       </p>
                     </div>
                     <button
                       onClick={onClose}
-                      className="text-xs font-mono text-accent underline mt-4 hover:text-[#FFFFFF]"
+                      className="text-base font-semibold min-h-[44px] font-mono text-accent underline mt-4 hover:text-[#FFFFFF]"
                     >
                       Browse Lookbook 01
                     </button>
@@ -128,7 +128,7 @@ export default function CartDrawer({
                                 ${item.product.price * item.quantity}
                               </span>
                             </div>
-                            <span className="text-[10px] font-mono text-accent/80 block uppercase mt-0.5">
+                            <span className="text-xs font-semibold tracking-wider font-mono text-accent/80 block uppercase mt-0.5">
                               Size Selected: {item.size}
                             </span>
                             <span className="text-[9px] font-mono text-[#8E8E93] block uppercase mt-0.5">
@@ -179,7 +179,7 @@ export default function CartDrawer({
                 <div className="w-16 h-16 border-t-2 border-r-2 border-accent rounded-full animate-spin" />
                 <div className="space-y-2">
                   <h3 className="font-display text-lg text-text-primary">CALIBRATING PRE-ORDER PASS</h3>
-                  <p className="text-[11px] font-mono text-accent uppercase tracking-widest">
+                  <p className="text-xs font-semibold font-mono text-accent uppercase tracking-widest">
                     Linking with Secure SSL Cryptography...
                   </p>
                   <p className="text-text-secondary text-xs font-sans max-w-xs leading-relaxed font-light mt-1">
@@ -198,7 +198,7 @@ export default function CartDrawer({
                 
                 <div className="space-y-2">
                   <h3 className="font-display text-xl text-[#FFFFFF]">Pre-Order Allocation Secured!</h3>
-                  <p className="text-[11px] font-mono text-accent uppercase">
+                  <p className="text-xs font-semibold font-mono text-accent uppercase">
                     Invoice Code: {transactionCode}
                   </p>
                   <p className="text-text-secondary text-xs font-sans font-light leading-relaxed max-w-xs mx-auto">
@@ -207,7 +207,7 @@ export default function CartDrawer({
                 </div>
 
                 {/* Symmetrical Invoice Ticket box */}
-                <div className="w-full bg-bg-primary border border-bg-tertiary p-5 text-left font-mono text-[10px] text-text-secondary space-y-3">
+                <div className="w-full bg-bg-primary border border-bg-tertiary p-5 text-left font-mono text-xs font-semibold tracking-wider text-text-secondary space-y-3">
                   <span className="text-[#FFFFFF] text-xs font-medium block border-b border-bg-tertiary pb-2 uppercase">
                     Aethel Dispatch Note Ledger
                   </span>
@@ -230,7 +230,7 @@ export default function CartDrawer({
 
                 <button
                   onClick={handleDismissSuccess}
-                  className="bg-accent text-[#0A0A0A] text-xs font-semibold font-mono py-3.5 px-8 hover:bg-text-primary transition-colors cursor-pointer"
+                  className="bg-accent text-[#0A0A0A] text-base font-semibold min-h-[44px] font-semibold font-mono py-3.5 px-8 hover:bg-text-primary transition-colors cursor-pointer"
                 >
                   DISMISS INVOICE STATE
                 </button>
@@ -246,14 +246,14 @@ export default function CartDrawer({
                   <span className="text-[#8E8E93] uppercase">PRE-ORDER SUBTOTAL</span>
                   <span className="text-accent font-semibold">${subtotal} USD</span>
                 </div>
-                <div className="flex justify-between items-center text-[10px] font-mono text-text-secondary/70">
+                <div className="flex justify-between items-center text-xs font-semibold tracking-wider font-mono text-text-secondary/70">
                   <span>ATELIER DISPATCH</span>
                   <span className="uppercase text-accent">Free Worldwide Insured Premium Express</span>
                 </div>
               </div>
 
               {/* Secure transaction lock tag */}
-              <div className="flex items-center space-x-2 text-[10px] font-mono text-[#8E8E93]/80 bg-bg-secondary p-3 border border-bg-tertiary">
+              <div className="flex items-center space-x-2 text-xs font-semibold tracking-wider font-mono text-[#8E8E93]/80 bg-bg-secondary p-3 border border-bg-tertiary">
                 <Lock className="w-3.5 h-3.5 text-accent shrink-0" />
                 <span>
                   High-ticket 256-Bit SSL tokenization secures this transaction checkout window.
@@ -262,7 +262,7 @@ export default function CartDrawer({
 
               <button
                 onClick={handleCheckoutInit}
-                className="w-full bg-accent hover:bg-text-primary text-bg-primary font-mono text-xs font-bold py-4 rounded-none transition-luxury flex items-center justify-center space-x-2 cursor-pointer"
+                className="w-full bg-accent hover:bg-text-primary text-bg-primary font-mono text-base font-semibold min-h-[44px] font-bold py-4 rounded-none transition-luxury flex items-center justify-center space-x-2 cursor-pointer"
               >
                 <span>[ PROTOCOL PRE-CHECKOUT ]</span>
                 <ArrowRight className="w-3.5 h-3.5" />

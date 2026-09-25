@@ -147,7 +147,7 @@ export default function SizingPortal() {
                       </div>
                       <div>
                         <h4 className="font-display text-lg text-text-primary font-medium">Standard Fitting Matrix</h4>
-                        <p className="text-[11px] text-[#8E8E93] font-light mt-1">
+                        <p className="text-xs font-semibold text-[#8E8E93] font-light mt-1">
                           Standard parameters covering size 7 to 12. Fits symmetrical feet without custom correction requirements.
                         </p>
                       </div>
@@ -170,7 +170,7 @@ export default function SizingPortal() {
                       </div>
                       <div>
                         <h4 className="font-display text-lg text-accent font-medium">Bespoke Last Commissioning</h4>
-                        <p className="text-[11px] text-[#8E8E93] font-light mt-1">
+                        <p className="text-xs font-semibold text-[#8E8E93] font-light mt-1">
                           Hand-carved hornbeam wood last cast exactly to your physiological scan data. Reusable for all subsequent orders.
                         </p>
                       </div>
@@ -193,7 +193,7 @@ export default function SizingPortal() {
 
                     {/* Arch Profile Button Selector */}
                     <div className="space-y-3" id="arch-profile-selector-group">
-                      <span className="block text-[10px] font-mono tracking-widest text-[#FFFFFF] uppercase">
+                      <span className="block text-xs font-semibold tracking-wider font-mono tracking-widest text-[#FFFFFF] uppercase">
                         1. Arch Height Profile
                       </span>
                       <div className="grid grid-cols-3 gap-3">
@@ -217,7 +217,7 @@ export default function SizingPortal() {
 
                     {/* Instep Profile Button Selector */}
                     <div className="space-y-3" id="instep-profile-selector-group">
-                      <span className="block text-[10px] font-mono tracking-widest text-[#FFFFFF] uppercase">
+                      <span className="block text-xs font-semibold tracking-wider font-mono tracking-widest text-[#FFFFFF] uppercase">
                         2. Instep Volume Proportions
                       </span>
                       <div className="grid grid-cols-3 gap-3">
@@ -321,7 +321,7 @@ export default function SizingPortal() {
                     </div>
 
                     {/* Numeric Parameter Details */}
-                    <div className="space-y-3 font-mono text-[11px]" id="live-parameters-display">
+                    <div className="space-y-3 font-mono text-xs font-semibold" id="live-parameters-display">
                       <div className="flex justify-between items-center" id="live-arch-delta">
                         <span className="text-text-secondary">Skeletal Arch Delta:</span>
                         <span className="text-accent font-semibold">
@@ -347,8 +347,8 @@ export default function SizingPortal() {
                         </span>
                       </div>
                       <div className="border-t border-bg-tertiary/40 pt-2 flex justify-between items-center" id="live-calib-code">
-                        <span className="text-text-secondary text-[10px]">T-BAR ENVELOPE VALUE:</span>
-                        <span className="text-accent font-bold text-[10px] tracking-wider">
+                        <span className="text-text-secondary text-xs font-semibold tracking-wider">T-BAR ENVELOPE VALUE:</span>
+                        <span className="text-accent font-bold text-xs font-semibold tracking-wider tracking-wider">
                           AETH-L-{formData.archProfile.substring(0,3).toUpperCase()}-{formData.instepProfile.substring(0,3).toUpperCase()}
                         </span>
                       </div>
@@ -359,7 +359,7 @@ export default function SizingPortal() {
                       <span className="block text-[8px] text-accent/80 font-semibold tracking-wider uppercase mb-1">
                         ARTISAN ADVISORY NOTE:
                       </span>
-                      <p className="text-[10px] text-text-secondary leading-normal font-sans font-light">
+                      <p className="text-xs font-semibold tracking-wider text-text-secondary leading-normal font-sans font-light">
                         {formData.archProfile === "low" && formData.instepProfile === "sleek" && "Combining low-arched support with low girth metrics. Block contours will be shaved along the waist to prevent slip."}
                         {formData.archProfile === "low" && formData.instepProfile === "standard" && "Medial wedge contour modification required. Instep girth maintains generic master last standards."}
                         {formData.archProfile === "low" && formData.instepProfile === "robust" && "Slight pronation risk. Upper pattern utilizes custom increased volume crown templates."}
@@ -433,7 +433,7 @@ export default function SizingPortal() {
                   </div>
 
                   <div className="bg-bg-primary p-4 border border-bg-tertiary">
-                    <p className="text-[10px] text-text-secondary leading-relaxed font-mono">
+                    <p className="text-xs font-semibold tracking-wider text-text-secondary leading-relaxed font-mono">
                       COUTIER DIRECTIVE: Submitting this form authorizes Aethel’s technical design lead to 
                       cross-compile these physical parameters against standard block templates or custom hornbeam orders.
                     </p>
@@ -448,7 +448,7 @@ export default function SizingPortal() {
                     <button
                       type="button"
                       onClick={handlePrevStep}
-                      className="inline-flex items-center space-x-2 text-xs tracking-widest text-text-secondary hover:text-[#FFFFFF] transition-colors font-mono cursor-pointer"
+                      className="inline-flex items-center space-x-2 text-base font-semibold min-h-[44px] tracking-widest text-text-secondary hover:text-[#FFFFFF] transition-colors font-mono cursor-pointer"
                     >
                       <ArrowLeft className="w-3.5 h-3.5" />
                       <span>[ GO BACK ]</span>
@@ -461,7 +461,7 @@ export default function SizingPortal() {
                     <button
                       type="button"
                       onClick={handleNextStep}
-                      className="bg-bg-primary text-text-primary hover:bg-bg-tertiary border border-bg-tertiary transition-luxury px-6 py-3 text-xs font-mono uppercase tracking-widest font-semibold flex items-center space-x-2 cursor-pointer"
+                      className="bg-bg-primary text-text-primary hover:bg-bg-tertiary border border-bg-tertiary transition-luxury px-6 py-3 text-base font-semibold min-h-[44px] font-mono uppercase tracking-widest font-semibold flex items-center space-x-2 cursor-pointer"
                     >
                       <span>CONTINUE APPLICATION</span>
                       <ArrowRight className="w-3.5 h-3.5 text-accent" />
@@ -469,7 +469,7 @@ export default function SizingPortal() {
                   ) : (
                     <button
                       type="submit"
-                      className="bg-accent text-[#0A0A0A] font-mono text-xs font-bold py-3.5 px-8 rounded-none border border-accent hover:bg-transparent hover:text-accent transition-luxury cursor-pointer"
+                      className="bg-accent text-[#0A0A0A] font-mono text-base font-semibold min-h-[44px] font-bold py-3.5 px-8 rounded-none border border-accent hover:bg-transparent hover:text-accent transition-luxury cursor-pointer"
                     >
                       [ REQUEST FITTING MATRIX ]
                     </button>
@@ -508,7 +508,7 @@ export default function SizingPortal() {
                 </div>
 
                 <div className="border-b border-bg-tertiary pb-4">
-                  <span className="text-[10px] text-accent font-semibold uppercase block">AETHEL FITPASS v3.1</span>
+                  <span className="text-xs font-semibold tracking-wider text-accent font-semibold uppercase block">AETHEL FITPASS v3.1</span>
                   <span className="text-[8px] text-text-secondary block">REGISTRAR SYSTEM NO. #AETH-{(Math.random() * 10000).toFixed(0)}</span>
                 </div>
 
@@ -538,7 +538,7 @@ export default function SizingPortal() {
                   {formData.notes && (
                     <div>
                       <span className="text-[8px] text-accent block uppercase">ORTHOPEDIC MEMORIES</span>
-                      <p className="text-[11px] text-text-secondary font-sans leading-relaxed mt-0.5 line-clamp-2">
+                      <p className="text-xs font-semibold text-text-secondary font-sans leading-relaxed mt-0.5 line-clamp-2">
                         {formData.notes}
                       </p>
                     </div>
@@ -555,7 +555,7 @@ export default function SizingPortal() {
               <div className="pt-4 flex justify-center items-center space-x-4">
                 <button
                   onClick={handleReset}
-                  className="text-xs text-text-secondary hover:text-accent font-mono underline transition-colors"
+                  className="text-base font-semibold min-h-[44px] text-text-secondary hover:text-accent font-mono underline transition-colors"
                 >
                   Configure New Fittings
                 </button>

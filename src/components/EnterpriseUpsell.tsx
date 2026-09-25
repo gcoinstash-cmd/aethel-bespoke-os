@@ -37,7 +37,7 @@ export default function EnterpriseUpsell() {
             </div>
 
             <div className="space-y-4 max-w-2xl">
-              <span className="text-[10px] font-mono tracking-[0.3em] text-accent block uppercase">
+              <span className="text-xs font-semibold tracking-wider font-mono tracking-[0.3em] text-accent block uppercase">
                 ENTERPRISE SYNC ARCHITECTURE
               </span>
               <h3 className="font-display font-light text-3xl md:text-4xl text-[#FFFFFF] leading-tight">
@@ -90,7 +90,7 @@ export default function EnterpriseUpsell() {
 
           {/* Sitemaps */}
           <div className="md:col-span-2 space-y-4">
-            <h4 className="text-[10px] font-mono tracking-widest text-text-primary uppercase">THE HANDS</h4>
+            <h4 className="text-xs font-semibold tracking-wider font-mono tracking-widest text-text-primary uppercase">THE HANDS</h4>
             <ul className="space-y-2.5 text-xs text-text-secondary font-sans font-light">
               <li><a href="#anatomy-section" className="hover:text-accent transition-colors">The Last Carving</a></li>
               <li><a href="#anatomy-section" className="hover:text-accent transition-colors">Goodyear Stitching</a></li>
@@ -100,7 +100,7 @@ export default function EnterpriseUpsell() {
           </div>
 
           <div className="md:col-span-2 space-y-4">
-            <h4 className="text-[10px] font-mono tracking-widest text-text-primary uppercase">COMMISSIONS</h4>
+            <h4 className="text-xs font-semibold tracking-wider font-mono tracking-widest text-text-primary uppercase">COMMISSIONS</h4>
             <ul className="space-y-2.5 text-xs text-text-secondary font-sans font-light">
               <li><a href="#sizing-architect-portal" className="hover:text-accent transition-colors">Request FitPass</a></li>
               <li><a href="#sizing-architect-portal" className="hover:text-accent transition-colors">Physiological Last</a></li>
@@ -110,7 +110,7 @@ export default function EnterpriseUpsell() {
           </div>
 
           <div className="md:col-span-4 space-y-4">
-            <h4 className="text-[10px] font-mono tracking-widest text-text-primary uppercase">NEWSLETTER LINEAGE</h4>
+            <h4 className="text-xs font-semibold tracking-wider font-mono tracking-widest text-text-primary uppercase">NEWSLETTER LINEAGE</h4>
             <p className="text-text-secondary text-xs font-sans font-light">
               Subscribe to recieve rare availability notices regarding limited leather hide batches and seasonal cordwainer allocations.
             </p>
@@ -118,9 +118,9 @@ export default function EnterpriseUpsell() {
               <input
                 type="email"
                 placeholder="Secure Email Register"
-                className="bg-[#121212] border border-bg-tertiary px-3.5 py-2 text-xs text-[#FFFFFF] focus:outline-none focus:border-accent w-full"
+                className="bg-[#121212] border border-bg-tertiary px-3.5 py-2 text-base min-h-[44px] text-[#FFFFFF] focus:outline-none focus:border-accent w-full"
               />
-              <button className="bg-accent px-4 py-2 hover:bg-text-primary transition-colors cursor-pointer">
+              <button className="bg-accent px-5 py-3 min-h-[44px] hover:bg-text-primary transition-colors cursor-pointer">
                 <Send className="w-4 h-4 text-bg-primary" />
               </button>
             </div>
@@ -128,7 +128,7 @@ export default function EnterpriseUpsell() {
 
         </div>
 
-        <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-bg-tertiary flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-text-secondary/70 gap-4">
+        <div className="max-w-7xl mx-auto px-6 pt-8 border-t border-bg-tertiary flex flex-col sm:flex-row justify-between items-center text-xs font-semibold tracking-wider font-mono text-text-secondary/70 gap-4">
           <div>
             © 2026 AETHEL STUDIO. ALL HISTORICAL RIGHTS PRESERVED.
           </div>
@@ -149,7 +149,7 @@ export default function EnterpriseUpsell() {
           <div className="w-full max-w-lg bg-bg-secondary border border-accent/20 p-8 md:p-10 relative">
             <button
               onClick={handleReset}
-              className="absolute top-6 right-6 text-text-secondary hover:text-[#FFFFFF] font-mono text-xs cursor-pointer"
+              className="absolute top-6 right-6 text-text-secondary hover:text-[#FFFFFF] font-mono text-base font-semibold min-h-[44px] cursor-pointer"
             >
               [ CLOSE ]
             </button>
@@ -217,11 +217,11 @@ export default function EnterpriseUpsell() {
                 <div className="bg-bg-primary p-3.5 border border-bg-tertiary space-y-1.5">
                   <span className="text-[8px] font-mono text-accent block uppercase">SELECT TECHNICAL REPRESENTATIVE slot</span>
                   <div className="flex gap-2">
-                    <span className="text-[10px] font-mono text-[#FFFFFF] bg-bg-tertiary px-2 py-1 flex items-center space-x-1 select-none">
+                    <span className="text-xs font-semibold tracking-wider font-mono text-[#FFFFFF] bg-bg-tertiary px-2 py-1 flex items-center space-x-1 select-none">
                       <Calendar className="w-3 h-3 text-accent shrink-0 inline mr-1" />
                       <span>Mon, 2:00 PM GMT</span>
                     </span>
-                    <span className="text-[10px] font-mono text-text-secondary bg-bg-primary border border-bg-tertiary px-2 py-1 select-none">
+                    <span className="text-xs font-semibold tracking-wider font-mono text-text-secondary bg-bg-primary border border-bg-tertiary px-2 py-1 select-none">
                       Tue, 11:00 AM GMT
                     </span>
                   </div>
@@ -230,7 +230,7 @@ export default function EnterpriseUpsell() {
                 <div className="text-right">
                   <button
                     type="submit"
-                    className="bg-accent text-bg-primary font-mono text-xs font-semibold py-3.5 px-6 rounded-none hover:bg-text-primary hover:text-bg-primary transition-luxury w-full"
+                    className="bg-accent text-bg-primary font-mono text-base font-semibold min-h-[44px] font-semibold py-3.5 px-6 rounded-none hover:bg-text-primary hover:text-bg-primary transition-luxury w-full"
                   >
                     CONFIRM RESERVATION SLOT ($3,500 Base Stack)
                   </button>
@@ -267,7 +267,7 @@ export default function EnterpriseUpsell() {
 
                 <button
                   onClick={handleReset}
-                  className="bg-accent text-[#0A0A0A] text-xs font-mono py-2.5 px-6 rounded-none hover:bg-text-primary hover:text-bg-primary transition-luxury cursor-pointer"
+                  className="bg-accent text-[#0A0A0A] text-base font-semibold min-h-[44px] font-mono py-2.5 px-6 rounded-none hover:bg-text-primary hover:text-bg-primary transition-luxury cursor-pointer"
                 >
                   DISMISS PROPOSAL PASS
                 </button>

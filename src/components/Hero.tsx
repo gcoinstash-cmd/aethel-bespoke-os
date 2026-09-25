@@ -21,7 +21,7 @@ export default function Hero({ onEnterAtelier }: HeroProps) {
         {/* Left Panel: Symmetrical & Asymmetrical Typography */}
         <div className="flex flex-col space-y-8 text-left z-10">
           <div className="space-y-4">
-            <div className="inline-flex items-center space-x-2 border border-accent/20 bg-accent/5 px-3 py-1 text-[10px] font-mono tracking-[0.2em] text-accent uppercase">
+            <div className="inline-flex items-center space-x-2 border border-accent/20 bg-accent/5 px-3 py-1 text-xs font-semibold tracking-wider font-mono tracking-[0.2em] text-accent uppercase">
               <Sparkles className="w-3 h-3 animate-pulse" />
               <span>THE 2026 EDITION LOOKBOOK</span>
             </div>
@@ -58,7 +58,7 @@ export default function Hero({ onEnterAtelier }: HeroProps) {
           <div className="pt-4 flex flex-wrap items-center gap-6">
             <button
               onClick={onEnterAtelier}
-              className="relative group inline-flex items-center text-xs tracking-[0.2em] font-mono uppercase bg-accent text-[#0A0A0A] font-medium py-4 px-8 rounded-none border border-accent hover:bg-transparent transition-luxury cursor-pointer"
+              className="relative group inline-flex items-center text-base font-semibold min-h-[44px] tracking-[0.2em] font-mono uppercase bg-accent text-[#0A0A0A] font-medium py-4 px-8 rounded-none border border-accent hover:bg-transparent transition-luxury cursor-pointer"
               id="hero-enter-atelier-btn"
             >
               <span className="transition-transform duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:-translate-x-1.5 text-bg-primary group-hover:text-accent font-bold">[</span>
@@ -97,7 +97,7 @@ export default function Hero({ onEnterAtelier }: HeroProps) {
 
           {/* Atelier Stamp Coordinates */}
           <div className="absolute top-6 left-6 z-20 mix-blend-difference opacity-80">
-            <div className="text-[10px] font-mono tracking-widest uppercase text-accent">
+            <div className="text-xs font-semibold tracking-wider font-mono tracking-widest uppercase text-accent">
               COORD. AETH-1.2
             </div>
             <div className="text-[8px] font-mono text-text-secondary">

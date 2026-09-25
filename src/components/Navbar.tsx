@@ -59,7 +59,7 @@ export default function Navbar({
           {onOpenAdminPass && (
             <button
               onClick={onOpenAdminPass}
-              className="text-xs uppercase font-mono tracking-widest text-text-secondary hover:text-accent border border-bg-tertiary hover:border-accent px-3 py-1.5 transition-all duration-200 cursor-pointer"
+              className="text-base font-semibold min-h-[44px] uppercase font-mono tracking-widest text-text-secondary hover:text-accent border border-bg-tertiary hover:border-accent px-3 py-1.5 transition-all duration-200 cursor-pointer"
             >
               [ ADMIN PASS ]
             </button>
@@ -67,7 +67,7 @@ export default function Navbar({
 
           <button
             onClick={onSizingClick}
-            className="hidden sm:inline-flex items-center space-x-2 text-xs tracking-widest text-accent font-mono border border-accent/20 hover:border-accent hover:bg-accent/5 px-4 py-2 rounded-none transition-luxury cursor-pointer"
+            className="hidden sm:inline-flex items-center space-x-2 text-base font-semibold min-h-[44px] tracking-widest text-accent font-mono border border-accent/20 hover:border-accent hover:bg-accent/5 px-5 py-3 min-h-[44px] rounded-none transition-luxury cursor-pointer"
             id="nav-fitting-commission"
           >
             <span>COMMISSION LAST</span>

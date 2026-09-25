@@ -106,19 +106,19 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
                 
                 {/* Limited Batch scarcity banner above image */}
                 {product.status === "limited" && (
-                  <div className="mb-3 font-mono text-[10px] tracking-widest text-accent uppercase flex items-center gap-1.5 animate-pulse">
+                  <div className="mb-3 font-mono text-xs font-semibold tracking-wider tracking-widest text-accent uppercase flex items-center gap-1.5 animate-pulse">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent" />
                     <span>[ LIMITED BATCH: {product.inventoryCount} PAIRS REMAINING ]</span>
                   </div>
                 )}
                 {product.status === "sold_out" && (
-                  <div className="mb-3 font-mono text-[10px] tracking-widest text-text-secondary/70 uppercase flex items-center gap-1.5">
+                  <div className="mb-3 font-mono text-xs font-semibold tracking-wider tracking-widest text-text-secondary/70 uppercase flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-text-secondary/40" />
                     <span>[ CURRENT BATCH FULLY SIGNED ]</span>
                   </div>
                 )}
                 {product.status !== "limited" && product.status !== "sold_out" && (
-                  <div className="mb-3 font-mono text-[10px] tracking-widest text-[#FFFFFF]/30 uppercase flex items-center gap-1.5">
+                  <div className="mb-3 font-mono text-xs font-semibold tracking-wider tracking-widest text-[#FFFFFF]/30 uppercase flex items-center gap-1.5">
                     <span className="w-1.5 h-1.5 rounded-full bg-accent/30" />
                     <span>[ REGULAR BATCH CURATION ]</span>
                   </div>
@@ -163,7 +163,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
 
                     {/* Sizing Matrix Selection */}
                     <div className="space-y-2 sm:space-y-3 pb-3 sm:pb-4 border-b border-bg-tertiary">
-                      <div className="flex flex-col sm:flex-row justify-between text-[9px] sm:text-[10px] font-mono tracking-wider text-text-secondary gap-1">
+                      <div className="flex flex-col sm:flex-row justify-between text-[9px] sm:text-xs font-semibold tracking-wider font-mono tracking-wider text-text-secondary gap-1">
                         <span>SELECT COUTIER SIZE (UK/US)</span>
                         <span className="text-accent underline cursor-pointer hover:text-text-primary self-start sm:self-auto" onClick={onOpenFittingPortal}>
                           View Sizing Architect
@@ -174,7 +174,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
                           <button
                             key={size}
                             onClick={() => handleSizeSelect(product.id, size)}
-                            className={`min-w-8 h-7 sm:min-w-10 sm:h-8 text-[10px] sm:text-[11px] font-mono border flex items-center justify-center transition-luxury cursor-pointer ${
+                            className={`min-w-8 h-7 sm:min-w-10 sm:h-8 text-xs font-semibold tracking-wider sm:text-xs font-semibold font-mono border flex items-center justify-center transition-luxury cursor-pointer ${
                               sizeSelected === size
                                 ? "bg-accent border-accent text-[#0A0A0A] font-semibold"
                                 : "bg-bg-primary border-bg-tertiary text-text-secondary hover:border-accent hover:text-[#FFFFFF]"
@@ -195,7 +195,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
                       
                       <button
                         onClick={() => handleAddClick(product)}
-                        className={`w-full min-[380px]:w-auto transition-luxury px-3 sm:px-4 py-2 sm:py-2.5 text-[10px] sm:text-xs font-mono uppercase tracking-widest font-semibold flex items-center justify-center space-x-2 ${
+                        className={`w-full min-[380px]:w-auto transition-luxury px-3 sm:px-4 py-2 sm:py-2.5 text-xs font-semibold tracking-wider sm:text-xs font-mono uppercase tracking-widest font-semibold flex items-center justify-center space-x-2 ${
                           product.status === "sold_out"
                             ? "bg-bg-tertiary border border-bg-tertiary text-text-primary hover:bg-accent hover:text-[#0A0A0A]"
                             : "bg-text-primary text-bg-primary hover:bg-accent hover:text-[#0A0A0A]"
@@ -210,7 +210,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
                 {/* Editorial Details beneath the frame */}
                 <div className="mt-6 flex flex-col sm:flex-row justify-between items-start gap-3 sm:gap-6">
                   <div className="space-y-1 flex-1">
-                    <span className="font-mono text-[10px] text-accent tracking-widest block font-medium">
+                    <span className="font-mono text-xs font-semibold tracking-wider text-accent tracking-widest block font-medium">
                       ARCHETYPE {product.id.split("-")[1]}
                     </span>
                     <h3 className="font-display font-medium text-xl text-text-primary group-hover:text-accent transition-colors duration-300">
@@ -273,7 +273,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
               </div>
 
               <div className="space-y-4">
-                <h4 className="text-[10px] font-mono tracking-widest text-[#FFFFFF] uppercase">
+                <h4 className="text-xs font-semibold tracking-wider font-mono tracking-widest text-[#FFFFFF] uppercase">
                   ANATOMICAL MATERIALS PROFILE
                 </h4>
                 <div className="space-y-2.5">
@@ -288,7 +288,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
 
               <div className="bg-bg-primary p-4 border border-bg-tertiary flex items-start space-x-3">
                 <Shield className="w-5 h-5 text-accent shrink-0 mt-0.5" />
-                <p className="text-[11px] text-text-secondary leading-relaxed">
+                <p className="text-xs font-semibold text-text-secondary leading-relaxed">
                   Every product incorporates a premium <strong className="text-accent font-medium">closed-channel Goodyear stitching using waxed Irish linen strands</strong>, backed by <strong className="text-accent font-medium">fiddleback oak-bark-tanned outsoles from Joh. Rendenbach</strong>. This masterpiece design creates a physiological posture unique to your foot's skeleton.
                 </p>
               </div>
@@ -322,7 +322,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
           <div className="w-full max-w-md bg-bg-secondary border border-bg-tertiary p-8 relative">
             <button
               onClick={closeWaitlist}
-              className="absolute top-6 right-6 text-text-secondary hover:text-[#FFFFFF] font-mono text-xs cursor-pointer"
+              className="absolute top-6 right-6 text-text-secondary hover:text-[#FFFFFF] font-mono text-base font-semibold min-h-[44px] cursor-pointer"
             >
               [ CLOSE ]
             </button>
@@ -343,7 +343,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
 
                 <div className="space-y-4">
                   <div className="space-y-1.5">
-                    <label className="text-[10px] font-mono tracking-wider text-text-secondary block">YOUR NAME</label>
+                    <label className="text-sm font-semibold tracking-wider font-mono tracking-wider text-text-secondary block">YOUR NAME</label>
                     <div className="relative">
                       <User className="absolute left-3 top-2.5 w-4 h-4 text-text-secondary/50" />
                       <input
@@ -358,7 +358,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
                   </div>
 
                   <div className="space-y-1.5">
-                    <label className="text-[10px] font-mono tracking-wider text-text-secondary block">SECURE EMAIL ADDRESS</label>
+                    <label className="text-sm font-semibold tracking-wider font-mono tracking-wider text-text-secondary block">SECURE EMAIL ADDRESS</label>
                     <div className="relative">
                       <Mail className="absolute left-3 top-2.5 w-4 h-4 text-text-secondary/50" />
                       <input
@@ -375,7 +375,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
 
                 <button
                   type="submit"
-                  className="w-full bg-accent text-[#0A0A0A] hover:bg-[#FFFFFF] transition-luxury py-3 text-xs font-mono font-semibold uppercase tracking-widest"
+                  className="w-full bg-accent text-[#0A0A0A] hover:bg-[#FFFFFF] transition-luxury py-3 text-base font-semibold min-h-[44px] font-mono font-semibold uppercase tracking-widest"
                 >
                   [ ENROL IN PRIORITY QUEUE ]
                 </button>
@@ -389,7 +389,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
                 </div>
 
                 <div className="space-y-2">
-                  <span className="text-[10px] font-mono text-accent uppercase tracking-widest block">
+                  <span className="text-xs font-semibold tracking-wider font-mono text-accent uppercase tracking-widest block">
                     QUEUE REGISTRATION RECORDED
                   </span>
                   <h3 className="font-display text-2xl text-text-primary">
@@ -401,7 +401,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
                 </div>
 
                 <div className="border-t border-bg-tertiary pt-6 mt-2">
-                  <p className="text-[10px] font-mono text-accent/70 uppercase">
+                  <p className="text-xs font-semibold tracking-wider font-mono text-accent/70 uppercase">
                     ESTIMATED RE-STOCK DISPATCH: JULY 2026
                   </p>
                 </div>
@@ -409,7 +409,7 @@ export default function ProductMatrix({ onAddToCart, onOpenFittingPortal }: Prod
                 <button
                   type="button"
                   onClick={closeWaitlist}
-                  className="w-full bg-[#FFFFFF]/10 hover:bg-[#FFFFFF]/25 text-[#FFFFFF] transition-colors py-2.5 text-xs font-mono uppercase tracking-widest"
+                  className="w-full bg-[#FFFFFF]/10 hover:bg-[#FFFFFF]/25 text-[#FFFFFF] transition-colors py-2.5 text-base font-semibold min-h-[44px] font-mono uppercase tracking-widest"
                 >
                   Acknowledge & Close
                 </button>

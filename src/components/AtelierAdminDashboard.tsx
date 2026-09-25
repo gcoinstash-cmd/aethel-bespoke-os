@@ -127,7 +127,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
             <div>
               <div className="flex items-center gap-2">
                 <h1 className="text-lg font-bold tracking-[0.25em] uppercase font-mono text-white">AETHEL CORDWAINER</h1>
-                <span className="text-[10px] font-mono px-2 py-0.5 bg-[#C5A85C]/20 text-[#C5A85C] border border-[#C5A85C]/30 font-bold">
+                <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 bg-[#C5A85C]/20 text-[#C5A85C] border border-[#C5A85C]/30 font-bold">
                   MASTER CORDWAINER & LASTMAKER OS
                 </span>
               </div>
@@ -142,7 +142,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
             </div>
             <button
               onClick={onExit}
-              className="flex items-center gap-2 px-4 py-2 border border-stone-700 bg-stone-900/60 hover:bg-[#C5A85C] hover:text-black hover:border-[#C5A85C] text-xs font-mono tracking-wider transition-all duration-200 cursor-pointer"
+              className="flex items-center gap-2 px-5 py-3 min-h-[44px] border border-stone-700 bg-stone-900/60 hover:bg-[#C5A85C] hover:text-black hover:border-[#C5A85C] text-base font-semibold min-h-[44px] font-mono tracking-wider transition-all duration-200 cursor-pointer"
             >
               <LogOut className="w-4 h-4" />
               <span>RETURN TO ATELIER LOOKBOOK</span>
@@ -161,7 +161,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
               <DollarSign className="w-4 h-4 text-[#C5A85C]" />
             </div>
             <div className="text-2xl font-bold font-mono text-white">${totalCommissionsValue.toLocaleString()}</div>
-            <div className="text-[11px] font-mono text-emerald-400 mt-1 flex items-center gap-1">
+            <div className="text-xs font-semibold font-mono text-emerald-400 mt-1 flex items-center gap-1">
               <TrendingUp className="w-3 h-3" />
               <span>4 Pairs Hand-Lasting In-Bench</span>
             </div>
@@ -173,7 +173,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
               <Ruler className="w-4 h-4 text-[#C5A85C]" />
             </div>
             <div className="text-2xl font-bold font-mono text-[#C5A85C]">$1,882.50</div>
-            <div className="text-[11px] font-mono text-stone-400 mt-1">Full Goodyear + Custom Last</div>
+            <div className="text-xs font-semibold font-mono text-stone-400 mt-1">Full Goodyear + Custom Last</div>
           </div>
 
           <div className="p-5 bg-[#121214] border border-stone-800 relative overflow-hidden">
@@ -182,7 +182,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
               <Clock className="w-4 h-4 text-[#C5A85C]" />
             </div>
             <div className="text-2xl font-bold font-mono text-white">4–6 Weeks</div>
-            <div className="text-[11px] font-mono text-emerald-400 mt-1">Joh. Rendenbach Sole Cured</div>
+            <div className="text-xs font-semibold font-mono text-emerald-400 mt-1">Joh. Rendenbach Sole Cured</div>
           </div>
 
           <div className="p-5 bg-[#121214] border border-stone-800 relative overflow-hidden">
@@ -191,7 +191,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
               <ShieldCheck className="w-4 h-4 text-emerald-400" />
             </div>
             <div className="text-2xl font-bold font-mono text-emerald-400">ACTIVE</div>
-            <div className="text-[11px] font-mono text-stone-400 mt-1">RLS Protected · Supabase 2.4</div>
+            <div className="text-xs font-semibold font-mono text-stone-400 mt-1">RLS Protected · Supabase 2.4</div>
           </div>
         </div>
 
@@ -250,7 +250,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
                   <button
                     key={s}
                     onClick={() => setFilterStatus(s)}
-                    className={`px-2.5 py-1 text-[11px] border cursor-pointer ${
+                    className={`px-2.5 py-1 text-xs font-semibold border cursor-pointer ${
                       filterStatus === s
                         ? 'border-[#C5A85C] bg-[#C5A85C]/10 text-[#C5A85C]'
                         : 'border-stone-800 text-stone-400 hover:text-white'
@@ -264,7 +264,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
 
             <div className="overflow-x-auto border border-stone-800 bg-[#121214]">
               <table className="w-full text-left font-mono text-xs">
-                <thead className="bg-black/60 text-stone-400 border-b border-stone-800 uppercase tracking-wider text-[11px]">
+                <thead className="bg-black/60 text-stone-400 border-b border-stone-800 uppercase tracking-wider text-xs font-semibold">
                   <tr>
                     <th className="py-3 px-4">Order # & Date</th>
                     <th className="py-3 px-4">Client Patron</th>
@@ -279,25 +279,25 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
                     <tr key={c.id} className="hover:bg-white/[0.02] transition-colors">
                       <td className="py-3 px-4">
                         <div className="font-bold text-[#C5A85C]">{c.orderNumber}</div>
-                        <div className="text-[10px] text-stone-500">{c.createdAt}</div>
+                        <div className="text-xs font-semibold tracking-wider text-stone-500">{c.createdAt}</div>
                       </td>
                       <td className="py-3 px-4">
                         <div className="font-semibold text-white">{c.clientName}</div>
-                        <div className="text-[10px] text-stone-400">{c.clientEmail}</div>
+                        <div className="text-xs font-semibold tracking-wider text-stone-400">{c.clientEmail}</div>
                       </td>
                       <td className="py-3 px-4">
                         <div className="text-stone-200">{c.model} (UK {c.size})</div>
-                        <div className="text-[10px] text-stone-400">{c.lastProfile}</div>
+                        <div className="text-xs font-semibold tracking-wider text-stone-400">{c.lastProfile}</div>
                       </td>
                       <td className="py-3 px-4">
-                        <div className="text-stone-300 text-[11px]">{c.leatherType}</div>
+                        <div className="text-stone-300 text-xs font-semibold">{c.leatherType}</div>
                       </td>
                       <td className="py-3 px-4 font-mono font-bold text-white">
                         ${c.totalPrice.toLocaleString()}
                       </td>
                       <td className="py-3 px-4">
                         <div className="flex items-center gap-2">
-                          <span className={`px-2 py-0.5 text-[10px] font-bold uppercase ${
+                          <span className={`px-2 py-0.5 text-xs font-semibold tracking-wider font-bold uppercase ${
                             c.status === 'Ready for Dispatch' ? 'bg-emerald-950/60 text-emerald-400 border border-emerald-800' :
                             c.status === 'Goodyear Welting' ? 'bg-amber-950/60 text-amber-400 border border-amber-800' :
                             'bg-stone-800 text-stone-400'
@@ -307,7 +307,7 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
                           <select
                             value={c.status}
                             onChange={(e) => handleUpdateStatus(c.id, e.target.value as BespokeCommission['status'])}
-                            className="bg-black border border-stone-700 text-stone-300 px-1.5 py-0.5 text-[10px] focus:outline-none focus:border-[#C5A85C]"
+                            className="bg-black border border-stone-700 text-stone-300 px-1.5 py-0.5 text-xs font-semibold tracking-wider focus:outline-none focus:border-[#C5A85C]"
                           >
                             <option value="Pattern Drafting">Pattern Drafting</option>
                             <option value="Last Sculpting">Last Sculpting</option>
@@ -329,84 +329,84 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
         {activeTab === 'inventory' && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 font-mono text-xs">
             <div className="p-6 bg-[#121214] border border-stone-800">
-              <span className="text-[10px] text-[#C5A85C] uppercase tracking-wider font-bold">RAW HIDE SUPPLY</span>
+              <span className="text-xs font-semibold tracking-wider text-[#C5A85C] uppercase tracking-wider font-bold">RAW HIDE SUPPLY</span>
               <h3 className="font-serif text-lg font-bold text-white mt-1 mb-2">Annonay French Box Calf</h3>
-              <p className="text-stone-400 text-[11px] mb-4">Direct from Annonay, France · Aniline finished full-grain</p>
+              <p className="text-stone-400 text-xs font-semibold mb-4">Direct from Annonay, France · Aniline finished full-grain</p>
               <div className="space-y-3">
                 <div className="p-3 bg-black/50 border border-stone-800 flex justify-between">
                   <div>
                     <div className="text-white font-bold">Midnight Noir Box Calf</div>
-                    <div className="text-[10px] text-stone-500">Thickness: 1.2–1.4mm</div>
+                    <div className="text-xs font-semibold tracking-wider text-stone-500">Thickness: 1.2–1.4mm</div>
                   </div>
                   <div className="text-right">
                     <div className="text-[#C5A85C] font-bold">14 Hides</div>
-                    <div className="text-[10px] text-emerald-400">Available</div>
+                    <div className="text-xs font-semibold tracking-wider text-emerald-400">Available</div>
                   </div>
                 </div>
                 <div className="p-3 bg-black/50 border border-stone-800 flex justify-between">
                   <div>
                     <div className="text-white font-bold">Cognac Repello Suede</div>
-                    <div className="text-[10px] text-stone-500">Scotchgard treated nap</div>
+                    <div className="text-xs font-semibold tracking-wider text-stone-500">Scotchgard treated nap</div>
                   </div>
                   <div className="text-right">
                     <div className="text-[#C5A85C] font-bold">8 Hides</div>
-                    <div className="text-[10px] text-emerald-400">Available</div>
+                    <div className="text-xs font-semibold tracking-wider text-emerald-400">Available</div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="p-6 bg-[#121214] border border-stone-800">
-              <span className="text-[10px] text-[#C5A85C] uppercase tracking-wider font-bold">OUTSOLE STOCK</span>
+              <span className="text-xs font-semibold tracking-wider text-[#C5A85C] uppercase tracking-wider font-bold">OUTSOLE STOCK</span>
               <h3 className="font-serif text-lg font-bold text-white mt-1 mb-2">Joh. Rendenbach Oak-Bark</h3>
-              <p className="text-stone-400 text-[11px] mb-4">Pit-cured 9 months in oak bark extract · Trier, Germany</p>
+              <p className="text-stone-400 text-xs font-semibold mb-4">Pit-cured 9 months in oak bark extract · Trier, Germany</p>
               <div className="space-y-3">
                 <div className="p-3 bg-black/50 border border-stone-800 flex justify-between">
                   <div>
                     <div className="text-white font-bold">5.5mm Fiddleback Soles</div>
-                    <div className="text-[10px] text-stone-500">Pre-beveled waist</div>
+                    <div className="text-xs font-semibold tracking-wider text-stone-500">Pre-beveled waist</div>
                   </div>
                   <div className="text-right">
                     <div className="text-[#C5A85C] font-bold">22 Bends</div>
-                    <div className="text-[10px] text-emerald-400">In Stock</div>
+                    <div className="text-xs font-semibold tracking-wider text-emerald-400">In Stock</div>
                   </div>
                 </div>
                 <div className="p-3 bg-black/50 border border-stone-800 flex justify-between">
                   <div>
                     <div className="text-white font-bold">Waxed Irish Linen Welt Thread</div>
-                    <div className="text-[10px] text-stone-500">Barbour Linens, N. Ireland</div>
+                    <div className="text-xs font-semibold tracking-wider text-stone-500">Barbour Linens, N. Ireland</div>
                   </div>
                   <div className="text-right">
                     <div className="text-[#C5A85C] font-bold">18 Spools</div>
-                    <div className="text-[10px] text-emerald-400">Optimal</div>
+                    <div className="text-xs font-semibold tracking-wider text-emerald-400">Optimal</div>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="p-6 bg-[#121214] border border-stone-800">
-              <span className="text-[10px] text-[#C5A85C] uppercase tracking-wider font-bold">LAST STORAGE</span>
+              <span className="text-xs font-semibold tracking-wider text-[#C5A85C] uppercase tracking-wider font-bold">LAST STORAGE</span>
               <h3 className="font-serif text-lg font-bold text-white mt-1 mb-2">Bavarian Hornbeam Vault</h3>
-              <p className="text-stone-400 text-[11px] mb-4">Permanent client anatomical lasts carved to 0.5mm precision</p>
+              <p className="text-stone-400 text-xs font-semibold mb-4">Permanent client anatomical lasts carved to 0.5mm precision</p>
               <div className="space-y-3">
                 <div className="p-3 bg-black/50 border border-stone-800 flex justify-between">
                   <div>
                     <div className="text-white font-bold">Archived Client Lasts</div>
-                    <div className="text-[10px] text-stone-500">Private client repository</div>
+                    <div className="text-xs font-semibold tracking-wider text-stone-500">Private client repository</div>
                   </div>
                   <div className="text-right">
                     <div className="text-[#C5A85C] font-bold">64 Lasts</div>
-                    <div className="text-[10px] text-stone-400">Vault Protected</div>
+                    <div className="text-xs font-semibold tracking-wider text-stone-400">Vault Protected</div>
                   </div>
                 </div>
                 <div className="p-3 bg-black/50 border border-stone-800 flex justify-between">
                   <div>
                     <div className="text-white font-bold">Rough Hornbeam Blocks</div>
-                    <div className="text-[10px] text-stone-500">Awaiting new commission</div>
+                    <div className="text-xs font-semibold tracking-wider text-stone-500">Awaiting new commission</div>
                   </div>
                   <div className="text-right">
                     <div className="text-[#C5A85C] font-bold">12 Pairs</div>
-                    <div className="text-[10px] text-emerald-400">Ready</div>
+                    <div className="text-xs font-semibold tracking-wider text-emerald-400">Ready</div>
                   </div>
                 </div>
               </div>
@@ -426,17 +426,17 @@ export default function AtelierAdminDashboard({ onExit }: AtelierAdminDashboardP
                 <div className="p-4 bg-black/60 border border-stone-800">
                   <div className="text-stone-500 mb-1">Gross Commission Volume</div>
                   <div className="text-2xl font-bold text-white">$45,200</div>
-                  <div className="text-stone-400 text-[11px] mt-1">24 bespoke commissions placed</div>
+                  <div className="text-stone-400 text-xs font-semibold mt-1">24 bespoke commissions placed</div>
                 </div>
                 <div className="p-4 bg-black/60 border border-stone-800">
                   <div className="text-stone-500 mb-1">Average Order Value (AOV)</div>
                   <div className="text-2xl font-bold text-[#C5A85C]">$1,883</div>
-                  <div className="text-stone-400 text-[11px] mt-1">High-ticket direct-to-consumer</div>
+                  <div className="text-stone-400 text-xs font-semibold mt-1">High-ticket direct-to-consumer</div>
                 </div>
                 <div className="p-4 bg-black/60 border border-stone-800">
                   <div className="text-stone-500 mb-1">Gross Atelier Margin</div>
                   <div className="text-2xl font-bold text-emerald-400">74.6%</div>
-                  <div className="text-stone-400 text-[11px] mt-1">Zero wholesale consignment discounts</div>
+                  <div className="text-stone-400 text-xs font-semibold mt-1">Zero wholesale consignment discounts</div>
                 </div>
               </div>
             </div>

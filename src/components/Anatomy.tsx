@@ -136,7 +136,7 @@ export default function Anatomy() {
                 aria-label="Select Last Anatomical Feature"
               >
                 <span className={`absolute -inset-3 rounded-full animate-ping duration-1000 ${activeSpecId === "last" ? "bg-accent/30" : "bg-transparent group-hover:bg-accent/10"}`} />
-                <span className={`relative flex items-center justify-center w-8 h-8 rounded-full border text-[11px] font-mono transition-luxury ${
+                <span className={`relative flex items-center justify-center w-8 h-8 rounded-full border text-xs font-semibold font-mono transition-luxury ${
                   activeSpecId === "last" 
                     ? "bg-accent border-accent text-[#0A0A0A] font-bold" 
                     : "bg-bg-primary border-bg-tertiary text-text-secondary group-hover:border-accent group-hover:text-text-primary animate-luxury-glow"
@@ -155,7 +155,7 @@ export default function Anatomy() {
                 aria-label="Select Upper Leather Feature"
               >
                 <span className={`absolute -inset-3 rounded-full animate-ping duration-1000 ${activeSpecId === "upper" ? "bg-accent/30" : "bg-transparent group-hover:bg-accent/10"}`} />
-                <span className={`relative flex items-center justify-center w-8 h-8 rounded-full border text-[11px] font-mono transition-luxury ${
+                <span className={`relative flex items-center justify-center w-8 h-8 rounded-full border text-xs font-semibold font-mono transition-luxury ${
                   activeSpecId === "upper" 
                     ? "bg-accent border-accent text-[#0A0A0A] font-bold" 
                     : "bg-bg-primary border-bg-tertiary text-text-secondary group-hover:border-accent group-hover:text-text-primary animate-luxury-glow"
@@ -174,7 +174,7 @@ export default function Anatomy() {
                 aria-label="Select Goodyear Welt Feature"
               >
                 <span className={`absolute -inset-3 rounded-full animate-ping duration-1000 ${activeSpecId === "welt" ? "bg-accent/30" : "bg-transparent group-hover:bg-accent/10"}`} />
-                <span className={`relative flex items-center justify-center w-8 h-8 rounded-full border text-[11px] font-mono transition-luxury ${
+                <span className={`relative flex items-center justify-center w-8 h-8 rounded-full border text-xs font-semibold font-mono transition-luxury ${
                   activeSpecId === "welt" 
                     ? "bg-accent border-accent text-[#0A0A0A] font-bold" 
                     : "bg-bg-primary border-bg-tertiary text-text-secondary group-hover:border-accent group-hover:text-text-primary animate-luxury-glow"
@@ -193,7 +193,7 @@ export default function Anatomy() {
                 aria-label="Select Sole Tannery Feature"
               >
                 <span className={`absolute -inset-3 rounded-full animate-ping duration-1000 ${activeSpecId === "sole" ? "bg-accent/30" : "bg-transparent group-hover:bg-accent/10"}`} />
-                <span className={`relative flex items-center justify-center w-8 h-8 rounded-full border text-[11px] font-mono transition-luxury ${
+                <span className={`relative flex items-center justify-center w-8 h-8 rounded-full border text-xs font-semibold font-mono transition-luxury ${
                   activeSpecId === "sole" 
                     ? "bg-accent border-accent text-[#0A0A0A] font-bold" 
                     : "bg-bg-primary border-bg-tertiary text-text-secondary group-hover:border-accent group-hover:text-text-primary animate-luxury-glow"
@@ -238,7 +238,7 @@ export default function Anatomy() {
                   <h3 className="font-display text-2xl font-light text-text-primary tracking-tight">
                     {activeSpec.title}
                   </h3>
-                  <span className="text-[10px] font-mono text-text-secondary tracking-widest block uppercase mt-0.5">
+                  <span className="text-xs font-semibold tracking-wider font-mono text-text-secondary tracking-widest block uppercase mt-0.5">
                     {activeSpec.subtitle}
                   </span>
                 </div>
@@ -264,7 +264,7 @@ export default function Anatomy() {
               <div className="space-y-2">
                 <div className="flex items-center space-x-2 text-accent">
                   {getFeatureIcon(activeSpec.id)}
-                  <span className="text-[10px] font-mono tracking-widest uppercase">
+                  <span className="text-xs font-semibold tracking-wider font-mono tracking-widest uppercase">
                     Material & Sourcing Process
                   </span>
                 </div>
@@ -285,7 +285,7 @@ export default function Anatomy() {
 
               {/* Lifespan/Longevity Section */}
               <div className="space-y-2 border-t border-bg-tertiary/60 pt-6">
-                <span className="text-[10px] font-mono tracking-widest text-text-primary block uppercase">
+                <span className="text-xs font-semibold tracking-wider font-mono tracking-widest text-text-primary block uppercase">
                   Longevity Metric & Aging
                 </span>
                 <p className="text-text-secondary font-sans text-xs font-light leading-relaxed italic">

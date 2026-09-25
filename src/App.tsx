@@ -175,7 +175,7 @@ export default function App() {
           <div className="bg-[#121212] border border-[#2a2a2a] w-full max-w-md p-8 relative shadow-2xl">
             <button
               onClick={() => setIsAdminPassModalOpen(false)}
-              className="absolute top-4 right-4 text-zinc-500 hover:text-zinc-200 transition-colors"
+              className="absolute top-4 right-4 text-zinc-300 hover:text-zinc-200 transition-colors"
             >
               <X className="w-5 h-5" />
             </button>
@@ -193,11 +193,11 @@ export default function App() {
             {/* 1-Click Cheat Code Autofill Pill */}
             <div className="mb-6 p-4 bg-[#18181b] border border-[#2e2e33]">
               <div className="flex items-center justify-between mb-2">
-                <span className="text-[11px] font-mono text-zinc-400 uppercase tracking-wider flex items-center">
+                <span className="text-xs font-semibold font-mono text-zinc-400 uppercase tracking-wider flex items-center">
                   <Sparkles className="w-3.5 h-3.5 text-accent mr-1.5" />
                   DEMO CHEAT CODE
                 </span>
-                <span className="text-[10px] font-mono px-2 py-0.5 bg-accent/20 text-accent uppercase">
+                <span className="text-xs font-semibold tracking-wider font-mono px-2 py-0.5 bg-accent/20 text-accent uppercase">
                   1-Click Fill
                 </span>
               </div>
@@ -207,13 +207,13 @@ export default function App() {
                 className="w-full text-left font-mono text-sm text-zinc-100 hover:text-accent bg-[#0d0d0f] px-3 py-2 border border-zinc-700 hover:border-accent transition-all flex items-center justify-between"
               >
                 <span>aethel2026</span>
-                <span className="text-[10px] text-zinc-500">[Click to autofill]</span>
+                <span className="text-xs font-semibold tracking-wider text-zinc-300">[Click to autofill]</span>
               </button>
             </div>
 
             <form onSubmit={handleAdminUnlock} className="space-y-4">
               <div>
-                <label className="block text-xs font-mono text-zinc-400 uppercase tracking-wider mb-2">
+                <label className="block text-sm font-semibold font-mono text-zinc-400 uppercase tracking-wider mb-2">
                   Atelier Passcode
                 </label>
                 <input
@@ -236,7 +236,7 @@ export default function App() {
                 </button>
                 <button
                   type="submit"
-                  className="flex-1 py-3 px-4 text-xs font-mono uppercase tracking-wider bg-accent text-black font-semibold hover:bg-accent/90 transition-all"
+                  className="flex-1 py-3 px-4 text-base font-semibold min-h-[44px] font-mono uppercase tracking-wider bg-accent text-black font-semibold hover:bg-accent/90 transition-all"
                 >
                   Unlock OS
                 </button>
@@ -254,7 +254,7 @@ export default function App() {
         >
           <div className="flex items-center space-x-2.5">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse shrink-0" />
-            <p className="text-[11px] font-mono tracking-wider text-text-primary uppercase leading-tight">
+            <p className="text-xs font-semibold font-mono tracking-wider text-text-primary uppercase leading-tight">
               {activeToast.message}
             </p>
           </div>
